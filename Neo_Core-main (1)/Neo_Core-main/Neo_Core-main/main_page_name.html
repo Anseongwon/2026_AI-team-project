@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>AI in Everyday Life</title>
+    <style>
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(to bottom, #d1d5db, #ffffff);
+        color: #111827;
+      }
+
+      header {
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        color: #4b5563;
+      }
+
+      /* 섹션을 넓게 쓰기 */
+      .section /*cardbox*/ {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        transition: 0.3s;
+      }
+
+      .section:hover {
+        transform: translateY(-5px);
+      }
+
+      .section img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .content/*card*/ {
+        flex: 1;
+      }
+
+      .content h2 {
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        color: #374151;
+        line-height: 1.6;
+      }
+
+      .box /*textbox*/ {
+        margin-top: 15px;
+        padding: 15px;
+        background: #f1f5f9;
+        border-radius: 10px;
+      }
+
+      .box-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #2563eb;
+      }
+
+      .tech-list {
+        margin: 0;
+        padding-left: 18px;
+        color: #4b5563;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px;
+        color: #4b5563;
+      }
+
+      /* 반응형 */
+      @media (max-width: 768px) {
+        .section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .section img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>AI in Everyday Life</h1>
+      <p>AI 기술이 다양한 분야에서 어떻게 활용되는지 살펴보자</p>
+    </header>
+
+    <!-- 의료 -->
+    <div class="section">
+      <img src="https://via.placeholder.com/400x250" alt="medical" />
+      <div class="content">
+        <h2>🧠 의료</h2>
+        <p>
+          AI는 의료 이미지와 데이터를 분석하여 질병을 진단하고, 치료 과정을
+          지원한다.
+        </p>
+
+        <div class="box">
+          <div class="box-title">사용 기술</div>
+          <ul class="tech-list">
+            <li>딥러닝 (Deep Learning)</li>
+            <li>컴퓨터 비전 (Computer Vision)</li>
+            <li>자연어 처리 (NLP)</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div class="box-title">설명</div>
+          <p>
+            AI는 X-ray, MRI 등의 의료 영상을 분석하여 질병을 빠르게 발견하고,
+            환자 데이터를 기반으로 맞춤형 치료를 제공한다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 자율주행 -->
+    <div class="section">
+      <img src="https://via.placeholder.com/400x250" alt="car" />
+      <div class="content">
+        <h2>🚗 자율주행</h2>
+        <p>AI는 도로 환경을 인식하고 안전한 주행을 위한 판단을 수행한다.</p>
+
+        <div class="box">
+          <div class="box-title">사용 기술</div>
+          <ul class="tech-list">
+            <li>컴퓨터 비전 (Computer Vision)</li>
+            <li>강화학습 (Reinforcement Learning)</li>
+            <li>센서 데이터 처리 (Sensor Fusion)</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div class="box-title">설명</div>
+          <p>
+            카메라와 센서를 통해 주변 상황을 실시간으로 인식하고, 최적의 경로와
+            행동을 결정하여 안전한 주행을 가능하게 한다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 금융 -->
+    <div class="section">
+      <img src="https://via.placeholder.com/400x250" alt="finance" />
+      <div class="content">
+        <h2>💰 금융</h2>
+        <p>AI는 데이터를 분석하여 금융 서비스의 효율성과 안전성을 높인다.</p>
+
+        <div class="box">
+          <div class="box-title">사용 기술</div>
+          <ul class="tech-list">
+            <li>머신러닝 (Machine Learning)</li>
+            <li>데이터 마이닝 (Data Mining)</li>
+            <li>예측 모델 (Predictive Modeling)</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div class="box-title">설명</div>
+          <p>
+            AI는 이상 거래를 탐지하고 고객의 소비 패턴을 분석하여 맞춤형 금융
+            서비스를 제공한다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 일상 서비스 -->
+    <div class="section">
+      <img src="https://via.placeholder.com/400x250" alt="daily" />
+      <div class="content">
+        <h2>📱 일상 서비스</h2>
+        <p>AI는 사용자 맞춤형 서비스를 제공하여 일상 생활의 편의성을 높인다.</p>
+
+        <div class="box">
+          <div class="box-title">사용 기술</div>
+          <ul class="tech-list">
+            <li>추천 시스템 (Recommendation System)</li>
+            <li>자연어 처리 (NLP)</li>
+            <li>음성 인식 (Speech Recognition)</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <div class="box-title">설명</div>
+          <p>
+            AI는 콘텐츠 추천, 음성 비서, 챗봇 등을 통해 사용자에게 맞춤형 정보를
+            제공하고 편의를 향상시킨다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      AI는 이미 우리의 일상 속 다양한 분야에서 활용되고 있으며, 앞으로 그
+      영향력은 더욱 확대될 것이다.
+    </footer>
+  </body>
+</html>
